@@ -29,9 +29,9 @@ I want to be able to filter the images so that I can view only images that match
 ### Feature 2
   * Number and name of feature: <u>Feature 2</u>
   * Estimate of time needed to complete: <u>2 Hour</u>
-  * Start time: _____
-  * Finish time: _____
-  * Actual time needed to complete: _____
+  * Start time: 4:40
+  * Finish time: 6:09
+  * Actual time needed to complete: 1hr 29 min
 
 ### Feature 3
   * Number and name of feature: <u>Feature 3</u>
