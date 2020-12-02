@@ -1,7 +1,9 @@
 'use strict';
 
-const imgObjArray = [];
-const OptionKeyWord = [];
+const imgObjArrayPage1 = [];
+const imgObjArrayPage2 = [];
+let OptionKeyWord = [];
+let currentPage = imgObjArrayPage1;
 
  // ano means addNewOption
  const addNewOption = anoKeyword => {
@@ -18,8 +20,6 @@ function JImageObject (jImgObject){
   this.description = jImgObject.description;
   this.keyword = jImgObject.keyword;
   this.horns = jImgObject.horns;
-
-  imgObjArray.push(this);
 }
 
 // or represents object render
@@ -41,27 +41,54 @@ JImageObject.prototype.render = function(orKeyword = '') {
   addNewOption(this.keyword);
 }
 
- 
+const refreshPageImages = (rpiInputObject = '') => {
+  $('ul').empty();
+
+  currentPage.forEach(imgDataObjRender => {
+    imgDataObjRender.render(rpiInputObject);
+  });
+}
+
+const refreshSelectElement = () => {
+  const optionDefaultSelection = "<option value=\"default\">All Images</option>"
+
+  $('select').empty();
+  OptionKeyWord = [];
+  $('select').append(optionDefaultSelection);
+}
 
 $('select').on('change', e => {
-  e.preventDefault();
-  $('ul').empty();
-  imgObjArray.forEach(imgDataObjRender => {
-    imgDataObjRender.render(e.target.value);
-  });
- 
+  refreshPageImages(e.target.value);
 });
 
+$('#page-1-button').on('click', e => {
+  currentPage = imgObjArrayPage1;
+  refreshSelectElement();
+  refreshPageImages();
+})
+
+$('#page-2-button').on('click', e => {
+  currentPage = imgObjArrayPage2;
+  refreshSelectElement();
+  refreshPageImages();
+})
 
 $.ajax({
   url: './data/page-1.json',
   async: true,
   success: dataObj => {
-    dataObj.forEach(imgDataObj => new JImageObject(imgDataObj));
+    dataObj.forEach(imgDataObj => imgObjArrayPage1.push(new JImageObject(imgDataObj)));
   }
 }).then(() => {
-  imgObjArray.forEach(imgDataObjRender => {
+  currentPage.forEach(imgDataObjRender => {
     imgDataObjRender.render();
   });  
 });
 
+$.ajax({
+  url: './data/page-2.json',
+  async: true,
+  success: dataObj => {
+    dataObj.forEach(imgDataObj => imgObjArrayPage2.push(new JImageObject(imgDataObj)));
+  }
+});
