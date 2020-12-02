@@ -19,23 +19,58 @@ I want to be able to filter the images so that I can view only images that match
     * JSON
 
 ## Time Estimate
-### Feature 1
+### Lab Day 1
+#### Feature 1
   * Number and name of feature: <u>Feature 1</u>
   * Estimate of time needed to complete: <u>1 Hour</u>
   * Start time: <u>2:41</u>
   * Finish time: <u>4:28</u>
   * Actual time needed to complete: <u>1 Hr 47 Min</u>
 
-### Feature 2
+#### Feature 2
   * Number and name of feature: <u>Feature 2</u>
   * Estimate of time needed to complete: <u>2 Hour</u>
   * Start time: <u>4:40</u>
   * Finish time: <u>6:09</u>
   * Actual time needed to complete: <u>1hr 29 min</u>
 
-### Feature 3
+#### Feature 3
   * Number and name of feature: <u>Feature 3</u>
   * Estimate of time needed to complete: <u>1 Hour</u>
   * Start time: <u>6:10</u>
   * Finish time: <u>7:15</u>
   * Actual time needed to complete: <u>1 Hr 5 Min </u>
+
+### Lab Day 2
+#### Feature 1
+  * Number and name of feature: <u>Feature 1</u>
+  * Estimate of time needed to complete: <u>1 Hour</u>
+  * Start time: <u>2:07</u>
+  * Finish time: <u>3:12</u>
+  * Actual time needed to complete: <u>1 Hr 5 Min</u>
+
+#### Feature 2
+  * Number and name of feature: <u>Feature 2</u>
+  * Estimate of time needed to complete: <u>1 Hour</u>
+  * Start time: <u></u>
+  * Finish time: <u></u>
+  * Actual time needed to complete: <u></u>
+
+#### Feature 3
+  * Number and name of feature: <u>Feature 3</u>
+  * Estimate of time needed to complete: <u>1 Hour</u>
+  * Start time: <u></u>
+  * Finish time: <u></u>
+  * Actual time needed to complete: <u></u>
+
+#### Feature 4
+  * Number and name of feature: <u>Feature 4</u>
+  * Estimate of time needed to complete: <u>1 Hour 30 Minutes</u>
+  * Start time: <u></u>
+  * Finish time: <u></u>
+  * Actual time needed to complete: <u></u>
+
+## Resources
+  * [Mustache Docs](https://github.com/janl/mustache.js)
+  * [Flexbox Basics from MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+  * [w3schools](https://www.w3schools.com/)
