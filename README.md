@@ -52,9 +52,9 @@ I want to be able to filter the images so that I can view only images that match
 #### Feature 2
   * Number and name of feature: <u>Feature 2</u>
   * Estimate of time needed to complete: <u>1 Hour</u>
-  * Start time: <u></u>
-  * Finish time: <u></u>
-  * Actual time needed to complete: <u></u>
+  * Start time: <u>3:18</u>
+  * Finish time: <u>3:58</u>
+  * Actual time needed to complete: <u>40 min</u>
 
 #### Feature 3
   * Number and name of feature: <u>Feature 3</u>

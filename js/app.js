@@ -26,16 +26,19 @@ function JImageObject (jImgObject){
 JImageObject.prototype.render = function(orKeyword = '') {
  
   if(this.keyword === orKeyword || !orKeyword || orKeyword === "default"){
-    const $imgCopy = $('#photo-template').clone();
-    $imgCopy.find('h2').text(this.title);
-    $imgCopy.find('h4').text(`horns: ${this.horns}`);
-    $imgCopy.find('img').attr('src', this.image_url);
-    $imgCopy.find('img').attr('alt', this.keyword);
-    $imgCopy.find('p').text(`${this.description}`);
+    // const $imgCopy = $('#photo-template').clone();
+    // $imgCopy.find('h2').text(this.title);
+    // $imgCopy.find('h4').text(`horns: ${this.horns}`);
+    // $imgCopy.find('img').attr('src', this.image_url);
+    // $imgCopy.find('img').attr('alt', this.keyword);
+    // $imgCopy.find('p').text(`${this.description}`);
   
-    $imgCopy.removeAttr('id');
+    // $imgCopy.removeAttr('id');
   
-    $('ul').append($imgCopy);
+    // $('ul').append($imgCopy);
+    const mustacheImageCopy = $('#photo-template').html();
+    const mustacheImageCopyRender = Mustache.render(mustacheImageCopy, this);
+    $('ul').append(mustacheImageCopyRender);
     
   }
   addNewOption(this.keyword);
