@@ -66,9 +66,9 @@ I want to be able to filter the images so that I can view only images that match
 #### Feature 4
   * Number and name of feature: <u>Feature 4</u>
   * Estimate of time needed to complete: <u>1 Hour 30 Minutes</u>
-  * Start time: <u></u>
-  * Finish time: <u></u>
-  * Actual time needed to complete: <u></u>
+  * Start time: <u>4:10</u>
+  * Finish time: <u>4:55</u>
+  * Actual time needed to complete: <u>45 Min</u>
 
 ## Resources
   * [Mustache Docs](https://github.com/janl/mustache.js)
