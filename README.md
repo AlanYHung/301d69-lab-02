@@ -70,6 +70,15 @@ I want to be able to filter the images so that I can view only images that match
   * Finish time: <u>4:55</u>
   * Actual time needed to complete: <u>45 Min</u>
 
+#### Feature 5
+  
+* Estimate of time needed to complete: <u>120 Min</u>
+
+* Start time: <u>3:30</u>
+
+* Finish time: <u>5:00</u>
+
+* Actual time needed to complete: <u>90 Min</u>
 ## Resources
   * [Mustache Docs](https://github.com/janl/mustache.js)
   * [Flexbox Basics from MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
